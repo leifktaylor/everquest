@@ -1,0 +1,4 @@
+mycharacter myaccount somepassword
+character2 otheraccount otherpassword
+character3 anotheraccount anotherpassword
+character4 yetanother supersecret

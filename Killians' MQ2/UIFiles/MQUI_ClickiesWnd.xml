@@ -1,0 +1,327 @@
+<?xml version = "1.0"?>
+<XML ID = "EQInterfaceDefinitionLanguage">
+   <Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
+
+  <InvSlot item="ClickSlot0">
+    <ScreenID>ClickSlot0</ScreenID>
+    <Location><X>0</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvCharm</Background>
+    <EQType>0</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot1">
+    <ScreenID>ClickSlot1</ScreenID>
+    <Location><X>20</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvEar</Background>
+    <EQType>1</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot2">
+    <ScreenID>ClickSlot2</ScreenID>
+    <Location><X>40</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvHead</Background>
+    <EQType>2</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot3">
+    <ScreenID>ClickSlot3</ScreenID>
+    <Location><X>60</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvFace</Background>
+    <EQType>3</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot4">
+    <ScreenID>ClickSlot4</ScreenID>
+    <Location><X>80</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvEar</Background>
+    <EQType>4</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot5">
+    <ScreenID>ClickSlot5</ScreenID>
+    <Location><X>100</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvNeck</Background>
+    <EQType>5</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot6">
+    <ScreenID>ClickSlot6</ScreenID>
+    <Location><X>120</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvShoulders</Background>
+    <EQType>6</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot7">
+    <ScreenID>ClickSlot7</ScreenID>
+    <Location><X>140</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvArms</Background>
+    <EQType>7</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot8">
+    <ScreenID>ClickSlot8</ScreenID>
+    <Location><X>160</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvAboutBody</Background>
+    <EQType>8</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot9">
+    <ScreenID>ClickSlot9</ScreenID>
+    <Location><X>180</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvWrist</Background>
+    <EQType>9</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot10">
+    <ScreenID>ClickSlot10</ScreenID>
+    <Location><X>200</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvWrist</Background>
+    <EQType>10</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot11">
+    <ScreenID>ClickSlot11</ScreenID>
+    <Location><X>220</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvRange</Background>
+    <EQType>11</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot12">
+    <ScreenID>ClickSlot12</ScreenID>
+    <Location><X>240</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvHands</Background>
+    <EQType>12</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot13">
+    <ScreenID>ClickSlot13</ScreenID>
+    <Location><X>260</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvPrimary</Background>
+    <EQType>13</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot14">
+    <ScreenID>ClickSlot14</ScreenID>
+    <Location><X>280</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvSecondary</Background>
+    <EQType>14</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot15">
+    <ScreenID>ClickSlot15</ScreenID>
+    <Location><X>300</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvRing</Background>
+    <EQType>15</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot16">
+    <ScreenID>ClickSlot16</ScreenID>
+    <Location><X>320</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvRing</Background>
+    <EQType>16</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot17">
+    <ScreenID>ClickSlot17</ScreenID>
+    <Location><X>340</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvChest</Background>
+    <EQType>17</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot18">
+    <ScreenID>ClickSlot18</ScreenID>
+    <Location><X>360</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvLegs</Background>
+    <EQType>18</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot19">
+    <ScreenID>ClickSlot19</ScreenID>
+    <Location><X>380</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvFeet</Background>
+    <EQType>19</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot20">
+    <ScreenID>ClickSlot20</ScreenID>
+    <Location><X>400</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvWaist</Background>
+    <EQType>20</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot21">
+    <ScreenID>ClickSlot21</ScreenID>
+    <Location><X>420</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_InvAmmo</Background>
+    <EQType>21</EQType>
+  </InvSlot>
+ 
+  <InvSlot item="ClickSlot22">
+    <ScreenID>ClickSlot22</ScreenID>
+    <Location><X>440</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_RecessedBox</Background>
+    <EQType>22</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot23">
+    <ScreenID>ClickSlot23</ScreenID>
+    <Location><X>460</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_RecessedBox</Background>
+    <EQType>23</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot24">
+    <ScreenID>ClickSlot24</ScreenID>
+    <Location><X>480</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_RecessedBox</Background>
+    <EQType>24</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot25">
+    <ScreenID>ClickSlot25</ScreenID>
+    <Location><X>500</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_RecessedBox</Background>
+    <EQType>25</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot26">
+    <ScreenID>ClickSlot26</ScreenID>
+    <Location><X>520</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_RecessedBox</Background>
+    <EQType>26</EQType>
+  </InvSlot>
+ 
+  <InvSlot item="ClickSlot27">
+    <ScreenID>ClickSlot27</ScreenID>
+    <Location><X>540</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_RecessedBox</Background>
+    <EQType>27</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot28">
+    <ScreenID>ClickSlot28</ScreenID>
+    <Location><X>560</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_RecessedBox</Background>
+    <EQType>28</EQType>
+  </InvSlot>
+
+  <InvSlot item="ClickSlot29">
+    <ScreenID>ClickSlot29</ScreenID>
+    <Location><X>580</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_RecessedBox</Background>
+    <EQType>29</EQType>
+  </InvSlot>
+
+<InvSlot item="ClickSlot30">
+    <ScreenID>ClickSlot29</ScreenID>
+    <Location><X>600</X><Y>0</Y></Location>
+    <Size><CX>20</CX><CY>20</CY></Size>
+    <Background>A_RecessedBox</Background>
+    <EQType>30</EQType>
+</InvSlot>
+
+  <Screen item="ClickWnd">
+    <ScreenID>ClickWnd</ScreenID>
+    <RelativePosition>false</RelativePosition>
+    <Location><X>200</X><Y>175</Y></Location>
+    <Size><CX>608</CX><CY>44</CY></Size>
+    <DrawTemplate>WDT_Rounded</DrawTemplate>
+    <Style_Border>true</Style_Border>
+    <Style_Closebox>true</Style_Closebox>
+    <Style_Sizable>true</Style_Sizable>
+    <Style_Minimizebox>true</Style_Minimizebox>
+    <Style_Titlebar>true</Style_Titlebar>
+    <Pieces>ClickSlot0</Pieces>
+    <Pieces>ClickSlot1</Pieces>
+    <Pieces>ClickSlot2</Pieces>
+    <Pieces>ClickSlot3</Pieces>
+    <Pieces>ClickSlot4</Pieces>
+    <Pieces>ClickSlot5</Pieces>
+    <Pieces>ClickSlot6</Pieces>
+    <Pieces>ClickSlot7</Pieces>
+    <Pieces>ClickSlot8</Pieces>
+    <Pieces>ClickSlot9</Pieces>
+    <Pieces>ClickSlot10</Pieces>
+    <Pieces>ClickSlot11</Pieces>
+    <Pieces>ClickSlot12</Pieces>
+    <Pieces>ClickSlot13</Pieces>
+    <Pieces>ClickSlot14</Pieces>
+    <Pieces>ClickSlot15</Pieces>
+    <Pieces>ClickSlot16</Pieces>
+    <Pieces>ClickSlot17</Pieces>
+    <Pieces>ClickSlot18</Pieces>
+    <Pieces>ClickSlot19</Pieces>
+    <Pieces>ClickSlot20</Pieces>
+    <Pieces>ClickSlot21</Pieces>
+    <Pieces>ClickSlot22</Pieces>
+    <Pieces>ClickSlot23</Pieces>
+    <Pieces>ClickSlot24</Pieces>
+    <Pieces>ClickSlot25</Pieces>
+    <Pieces>ClickSlot26</Pieces>
+    <Pieces>ClickSlot27</Pieces>
+    <Pieces>ClickSlot28</Pieces>
+    <Pieces>ClickSlot29</Pieces>
+    <Pieces>ClickSlot30</Pieces>
+  </Screen>
+
+  <Listbox item = "ClickList">
+     <ScreenID>ClickList</ScreenID>
+     <DrawTemplate>WDT_Inner</DrawTemplate>
+     <AutoStretch>true</AutoStretch>
+     <LeftAnchorOffset>0</LeftAnchorOffset>
+     <TopAnchorOffset>-20</TopAnchorOffset>
+     <RightAnchorOffset>0</RightAnchorOffset>
+     <BottomAnchorOffset>0</BottomAnchorOffset>
+     <RightAnchorToLeft>false</RightAnchorToLeft>
+     <BottomAnchorToTop>false</BottomAnchorToTop>
+     <TopAnchorToTop>true</TopAnchorToTop>
+     <LeftAnchorToLeft>true</LeftAnchorToLeft>
+     <Columns><Width>150</Width></Columns>
+     <Style_Border>true</Style_Border>
+      <Font>2</Font>
+  </Listbox>
+
+  <Screen item = "ClickSet">
+     <ScreenID>ClickSet</ScreenID>
+     <RelativePosition>false</RelativePosition>
+     <Location><X>10</X><Y>30</Y></Location>
+     <Size><CX>100</CX><CY>450</CY></Size>
+     <DrawTemplate>WDT_Rounded</DrawTemplate>
+     <Style_Titlebar>true</Style_Titlebar>
+     <Style_Minimizebox>true</Style_Minimizebox>
+     <Style_Border>true</Style_Border>
+     <Style_Sizable>true</Style_Sizable>
+     <Pieces>ClickList</Pieces>
+  </Screen>
+ 
+</XML>

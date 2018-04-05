@@ -1,0 +1,91 @@
+team1:
+  - shek
+  - armis
+  - liet
+  - trix
+  - madaar
+  - neti
+
+team2:
+  - krimson
+  - taek
+  - cadenza
+  - sintel
+  - rell
+  - simra
+
+team3:
+  - kesh
+  - serah
+  - legato
+  - chip
+  - twofor
+  - mudcrush
+
+pl:
+  - shek
+  - armis
+  - cadenza
+  - sintel
+  - mudcrush
+  - rell
+  - heel
+  - slay
+  - reya
+  - staccato
+  - vivace
+  - zaxim
+
+all:
+  - shek
+  - kesh
+  - cadenza
+  - legato
+  - armis
+  - simra
+  - serah
+  - mudcrush
+  - rell
+  - madaar
+  - neti
+  - sintel
+  - taek
+  - chip
+  - twofor
+  - trix
+  - liet
+  - krimson
+  - reya
+  - zaxim
+  - vivace
+  - staccato
+  - heel
+  - slay
+
+all2:
+  - shek
+  - kesh
+  - cadenza
+  - legato
+  - armis
+  - simra
+  - serah
+  - mudcrush
+  - rell
+  - madaar
+  - neti
+  - sintel
+  - taek
+  - chip
+  - twofor
+  - trix
+  - liet
+  - krimson
+
+small:
+  - shek
+  - armis
+  - madaar
+
+solo:
+  - shek

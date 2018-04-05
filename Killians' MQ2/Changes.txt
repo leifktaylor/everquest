@@ -1,0 +1,35 @@
+19, October 2011 by Itchybottom
+- Updated MQ2EQBC to 11.0218
+
+17, October 2011 by Itchybottom
+- Cursor typemember fix (latest ISXEQ crash workaround caused a problem for MQ2)
+
+16, October 2011 by Itchybottom
+- MQ2MoveUtils, MQ2EQBC chat font offset change
+- Added additional SpellDuration case 13
+- More ISXEQ fixes
+- .MyRange and .MyCastTime typemembers reflect client better
+- UNKNOWN_BODYTYPE 63 spam fix
+- Fixed HP and mana reporting in stock UI
+- Changed some defaults in macroquest.ini
+
+15, Octobor 2011 by Itchybottom
+- Declared Killians lord of the butt monkeys
+
+14, October 2011 by Itchybottom
+- Added additional check for EQEMU sending invalid spell data to the client
+- ISXEQ Stacks typemember fix
+
+11, January 2010 by Itchybottom
+- Merged more SoD build updates (MQ2MoveUtils, MQ2Melee)
+- Removed MQ2Navigation from the compile (work in progress)
+
+6, January 2010 by Itchybottom
+- Added MQ2Navigation by Shadows91
+
+24, December 2010 by Itchybottom
+- Imported all VIP plug-ins from SoD build
+- Imported changes from SoD build
++ CharacterZoneClient__HasSkill == 437590
++ EQ_Character__IsExpansionFlag == 40CAE0
++ EQ_Character__TotalEffect == 427C90 
