@@ -1,0 +1,10 @@
+---
+
+# These directories must be set correctly for PyEQ extensions to work
+
+# Posix format
+eq_dir: ./eqtitan/
+mq_dir: ./mq2/
+# Windows format
+win_eq_dir: C:\Everquest\eqtitan\
+win_mq_dir: C:\Everquest\mq2\

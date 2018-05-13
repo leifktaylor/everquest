@@ -1,0 +1,101 @@
+elite:
+  - shek
+  - liet
+  - slay
+  - mudcrush
+  - armis
+  - legato
+
+elite2:
+  - shek
+  - liet
+  - slay
+  - mudcrush
+  - armis
+  - legato
+  - heel
+  - simra
+  - rell
+  - chip
+  - madaar
+  - zaxim
+
+hedge:
+  - shek
+  - liet
+  - slay
+  - mudcrush
+  - armis
+  - legato
+  - heel
+  - simra
+  - rell
+  - chip
+  - madaar
+  - zaxim
+  - cleave
+  - hilt
+  - forte
+  - brahma
+  - risa
+  - tera
+
+elite4:
+  - shek
+  - kesh
+  - cadenza
+  - legato
+  - vivace
+  - staccato
+  - armis
+  - simra
+  - serah
+  - reya
+  - mudcrush
+  - rell
+  - madaar
+  - neti
+  - sintel
+  - zaxim
+  - chip
+  - twofor
+  - slay
+  - krimson
+  - trix
+  - liet
+  - heel
+  - taek
+
+all:
+  - shek
+  - kesh
+  - cadenza
+  - legato
+  - vivace
+  - staccato
+  - forte
+  - armis
+  - simra
+  - serah
+  - reya
+  - tera
+  - risa
+  - mudcrush
+  - rell
+  - madaar
+  - neti
+  - sintel
+  - zaxim
+  - brahma
+  - chip
+  - twofor
+  - slay
+  - krimson
+  - cleave
+  - hilt
+  - trix
+  - liet
+  - taek
+  - heel
+
+none:

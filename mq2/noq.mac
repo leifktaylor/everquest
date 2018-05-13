@@ -1,0 +1,131 @@
+Sub Main
+
+/echo starting 1
+/echo starting 2
+/echo starting 3
+
+	/declare noqDebug bool local FALSE
+
+	| ---------- Declare who is helping on this endeavour
+	| ---------- Entries are "name|spell-to-cast"
+	/declare cursecallerKillers[4] string local
+	/varset cursecallerKillers[1] Madaar|White Fire
+	/varset cursecallerKillers[2] Neti|Strike of Solusek
+	/varset cursecallerKillers[3] Zaxim|Madness of Ikkibi
+	/varset cursecallerKillers[4] Sintel|Fizrebolt of Tallon
+
+	| ---------- End other macros on killers (starting at 2, where 1 is the macro runner)
+	/declare m int local
+	/for m 2 to ${cursecallerKillers.Size}
+		/squelch /bct ${cursecallerKillers[${m}].Arg[1,|]} //endmac
+	/next m
+
+	| ---------- Create a list of the above entries to check against later
+	/declare cursecallerKillersList string local
+	/declare n int local
+	/for n 1 to ${cursecallerKillers.Size}
+		/if (${n} == 1) {
+			/varset cursecallerKillersList cursecallerKillers[${n}]
+		} else {
+			/varset cursecallerKillersList {cursecallerKillersList},cursecallerKillers[${n}]
+	}
+
+	| ---------- Debug Info
+	/if (${noqDebug}) /echo noq00: {cursecallerKillersList} = ${cursecallerKillersList}
+
+	/declare radiusRange int local 180
+	/declare mobsInRange int local
+	/declare targetToCheck int local
+	/declare i int local
+	/declare j int local
+	/declare k int local
+	
+	| ---------- Loop through the nearest spawns looking for one that isn't named Noqufiel and then call for nukes
+	:startLoop
+
+	| ---------- Set the number of nearby NPCs within radiusRange and reset the {targetToCheck}
+	/varset mobsInRange ${SpawnCount[npc radius ${radiusRange}]}
+	/varset targetToCheck 0
+
+	| ------------ Debug Info
+	/if (${noqDebug}) {
+		/echo noq10: Starting new loop at time ${MacroQuest.Running}
+		/echo noq11: {mobsInRange} = ${mobsInRange}
+		/echo noq12: {targetToCheck} = ${targetToCheck}
+	}
+
+	| ---------- Loop through targets to find a target without "Noq" in his name
+	| ---------- Prioritize targets that have members of this process targeted
+	/for i 1 to ${mobsInRange}
+
+		| ---------- If targetToCheck has Noqufiel in it's name, then skip to the next mob
+		/if (!${Spawn[${NearestSpawn[${i}, npc radius ${radiusRange}].ID}].CleanName.Find[cursebearer]}) /goto :skipThisTarget
+
+		| ---------- We have a target that isn't a noq, set it as the targetToCheck
+		/varset targetToCheck ${NearestSpawn[${i}, npc radius ${radiusRange}].ID}
+
+		| ------------ Debug Info
+		/if (${noqDebug}) {
+			/echo noq20: {i} = ${i}
+			/echo noq21: {targetToCheck} = ${targetToCheck}
+			/echo noq22: {targetToCheck.CleanName} = ${Spawn[${targetToCheck}].CleanName}
+		}
+
+		| ---------- Set your target to the mob in question
+		/target id ${targetToCheck}
+		/delay 2s ${Target.ID}
+
+		| ----------  If the target has one of the cursecallerKillers targeted, exit directly to the nuking routine
+		/if (${Me.TargetOfTarget.Type.Equal[PC]} && (${Select[${Me.TargetOfTarget},${cursecallerKillersList}]} > 0)) {
+			
+			/if (${noqDebug}) {
+				/echo noq30: Mob found with ${Me.TargetOfTarget} as target!  Exiting for :nukeTarget routine on this target
+				/echo noq31: {targetToCheck} = ${targetToCheck}
+				/echo noq32: {targetToCheck.CleanName} = ${Spawn[${targetToCheck}].CleanName}
+			}
+
+			/goto :nukeTarget
+		}
+
+		:skipThisTarget
+
+	/next i
+
+	| ---------- If {targetToCheck} = 0, then no target found, loop back to the start
+	/if (!${targetToCheck}) {
+
+		/if (${noqDebug}) {
+			/echo noq40: No target found, going back to startLoop to try again
+			/echo noq41: {targetToCheck} = ${targetToCheck}
+		}
+
+		/goto :startLoop
+	}
+
+	:nukeTarget
+			
+	| ---------- Loop through the list of each cursecaller having them cast the appropriate spell on the targetToCheck
+	/for j 1 to ${cursecallerKillers.Size}
+		/squelch /bct ${cursecallerKillers[${j}].Arg[1,|]} //casting "${cursecallerKillers[${j}].Arg[2,|]}" -targetid|${targetToCheck}
+		/squelch /bct ${cursecallerKillers[${j}].Arg[1,|]} //pet attack
+				
+		/if (${noqDebug}) {
+			/echo noq50: {j} = ${j}
+			/echo noq51: {cursecallerKillers[${j}]} = ${cursecallerKillers[${j}]}
+			/echo noq52: /bct ${cursecallerKillers[${j}].Arg[1,|]} //casting "${cursecallerKillers[${j}].Arg[2,|]}" -targetid|${targetToCheck}
+		}
+
+	/next j
+
+	| ---------- Delay 0.5s to slow down the looping somewhat then loop and nuke again if the the {targetToCheck} is still targeted
+	/delay 10
+	/if (${Target.ID} == ${targetToCheck}) /goto :nukeTarget
+
+	| ---------- Target is dead, interrupt any existing casting for all casters
+	/for k 1 to ${cursecallerKillers.Size}
+		/bct ${cursecallerKillers[${k}].Arg[1,|]} //interrupt
+	/next k	
+
+	/goto :startLoop
+
+/return
