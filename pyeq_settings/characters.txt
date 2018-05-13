@@ -1,0 +1,4 @@
+myname myaccount mypassword
+newname anotheraccount anotherpass
+superman superaccount supersecret
+conan barbarian1 secret2
